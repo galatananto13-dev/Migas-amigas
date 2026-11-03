@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Migas amigas</title>
+    <style>
+        body {
+            background-color: #f7f1e8;
+            color: #5c4033;
+        }
+          .titulo {
+        text-align: center;
+        font-size: 36px;
+        font-family: Georgia, serif;
+    }
+    .subtitulo {
+    text-align: center;
+    font-size: 18px;
+    color: #7a5a48;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+.idiomas {
+    text-align: center;
+    font-size: 14px;
+    color: #5c4033;
+    margin-bottom: 5px;
+}
+
+    .cabecera {
+    background-color: #d8c3a5;
+}
+.menu {
+    background-color: #eadcca;
+    font-weight: bold;
+}
+.proceso {
+    height: 180px;
+    background-color: #f3eadf;
+    font-size: 20px;
+    font-weight: bold;
+    color: #5c4033;
+}
+.pan-animado {
+    font-size: 18px;
+    color: #5c4033;
+}
+
+.pan-animado span {
+    display: inline-block;
+    margin: 0 8px;
+    animation: aparecerPaso 5s infinite;
+}
+.pan-animado span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.pan-animado span:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.pan-animado span:nth-child(3) {
+    animation-delay: 2s;
+}
+
+.pan-animado span:nth-child(4) {
+    animation-delay: 3s;
+}
+
+.pan-animado span:nth-child(5) {
+    animation-delay: 4s;
+}
+.categorias {
+    background-color: #eadcca;
+    font-size: 20px;
+    font-weight: bold;
+    color: #5c4033;
+    padding: 12px;
+    border-radius: 8px;
+letter-spacing: 0.5px;
+text-align: center;
+}
+.productos td {
+    vertical-align: top;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #faf6f0;
+    color: #5c4033;
+}
+.productos strong {
+    font-size: 20px;
+    color: #5c4033;
+}
+
+.productos img {
+    display: block;
+    margin: 15px auto 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(92, 64, 51, 0.2);
+
+}
+.contacto {
+    background-color: #eadcca;
+    font-size: 18px;
+    color: #5c4033;
+    padding: 20px;
+}
+.mapa {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #f3eadf;
+    font-size: 16px;
+    color: #5c4033;
+}
+.productos {
+    color: #5c4033 !important;
+}
+
+@keyframes moverProceso {
+    0% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
+@keyframes aparecerPaso {
+    0%, 20% {
+        opacity: 0.3;
+        transform: translateY(5px);
+    }
+
+    40%, 60% {
+        opacity: 1;
+        transform: translateY(-5px);
+    }
+
+    80%, 100% {
+        opacity: 0.3;
+        transform: translateY(5px);
+    }
+}
+
+   
+     table {
+    width: 90%;
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 8px;
+}
+    td {
+    border: 1px solid #c8b6a0;
+    padding: 15px;
+    text-align: center;
+     border-radius: 6px;
+}
+img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+    </style>
+</head>
+
+<body>
+
+	<h1 class="titulo">Migas amigas</h1>
+
+<p class="subtitulo">Panadería y pastelería familiar</p>
+
+<div class="idiomas">ES | PT</div>
+<table 
+   <tr class="cabecera">
+        <td>Migas amigas</td>
+    </tr>
+    <tr class="menu">
+   <td>
+    <a href="#panaderia">Panadería</a> |
+    <a href="#pasteleria">Pastelería-Bollería</a> |
+    <a href="#empanadas">Empanadas</a> |
+    <a href="#final">Contacto</a>
+</td>
+</tr>
+<tr class="proceso">
+    <td>
+        <div>Proceso de elaboración del pan</div>
+       <div class="pan-animado">
+    <span>Harina</span>
+    <span>Amasado</span>
+    <span>Fermentación</span>
+    <span>Horneado</span>
+    <span>Pan</span>
+</div>
+    </td>
+</tr>
+
+
+<tr class="categorias">
+    <td>Panadería</td>
+    <td>Pastelería-Bollería</td>
+    <td>Empanadas</td>
+</tr>
+
+<tr class="productos">
+    <td id="panaderia">
+    <strong>Pan de pueblo</strong><br>
+    <span class="descripcion">Harina, agua, sal y levadura</span><br>
+    <span class="descripcion">Elaborado y horneado de forma tradicional</span>
+    <img src="imagenes/pan-pueblo.png.png" width="200">
+</td>
+    <td id="pasteleria">
+        <strong>Croissant</strong><br>
+        Harina, mantequilla, azúcar y leche<br>
+        Preparado con masa y horneado
+<img src="imagenes/croissant.png.png" width="200">
+    </td>
+
+    <td id="empanadas">
+        <strong>Empanada de atún</strong><br>
+        Harina, atún, tomate y cebolla<br>
+        Rellenada y horneada
+        <img src="imagenes/empanada.png.png" width="200">
+    </td>
+</tr>
+<tr class="contacto" id="final">
+    <td colspan="3">
+        <strong>Contacto</strong><br><br>
+        Dirección: Calle Principal, 10<br>
+        Teléfono: 600 000 000
+        <br><br>
+Localización: Cerca de la frontera con Portugal
+<div class="mapa">
+    <span>Portugal</span>
+    <span>→</span>
+    <strong>Migas amigas</strong>
+    <span>←</span>
+    <span>España</span>
+</div>
+    </td>
+</tr>
+</table>
+<script src="main.js"></script>
+</body>
+
+</html>
